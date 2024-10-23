@@ -285,8 +285,16 @@ class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void countStation () {
+        Radio radio = new Radio (15);
+
+        radio.setCurrentRadioStation(13);
+
+        int expected = 13;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+
+    }
 }
-
-
-
-
